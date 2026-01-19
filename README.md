@@ -48,15 +48,26 @@ The ESMfold MCP server provides protein sequence analysis capabilities through M
 
 ## Installation
 
+### Quick Setup (Recommended)
+
+Run the automated setup script:
+
+```bash
+cd esmfold_mcp
+bash quick_setup.sh
+```
+
+The script will create both the main MCP environment and the ESMFold environment, install all dependencies, clone the ESM repository, and display the Claude Code configuration. See `quick_setup.sh --help` for options like `--skip-env` or `--skip-repo`.
+
 ### Prerequisites
 - Conda or Mamba (mamba recommended for faster installation)
 - Python 3.10+ for MCP server and Python 3.7+ for ESM models
 - NVIDIA GPU with CUDA support (optional, CPU fallback available)
 - At least 8GB RAM (16GB+ recommended for larger models)
 
-### Create Environment
+### Manual Installation (Alternative)
 
-Please strictly follow the information in `reports/step3_environment.md` to obtain the procedure to setup the environment. The working installation procedure is shown below:
+If you prefer manual installation or need to customize the setup, follow the information in `reports/step3_environment.md`:
 
 ```bash
 # Navigate to the MCP directory
